@@ -8,10 +8,19 @@
 			"version": 1.0,
 			"lib": "tinyurl.lua",
 			"download": {
-				"tinyurl.lua": "github://Lignumm/BenchRepo/src/tinyurl.lua",
+				"tinyurl.lua": "github://Lignumm/BenchRepo/src/tinyurl.lua"
+			}
+		},
+		
+		{
+			"name": "shortenurl",
+			"description": "A tool that uses lignum/tinyurl to shorten URLs.",
+			"version": 1.0,
+			"launch": "shortenurl.lua",
+			"download": {
 				"shortenurl.lua": "github://Lignumm/BenchRepo/src/shortenurl.lua"
 			},
-			"launch": "shortenurl.lua"
+			"depends": ["lignum/tinyurl"]
 		}
 	]
 }
