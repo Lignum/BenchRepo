@@ -5,6 +5,10 @@ function module.shorten(url)
         return error("HTTP is not enabled!")
     end
     
+    if not http.checkURL(expect(url, "string", 1)) then
+        return error("Invalid URL \"" .. url .. "\"!")
+    end
+    
     local encoded = textutils.urlEncode(url)
     local resp = http.get("http://tinyurl.com/api-create.php?url=" .. encoded)
     
