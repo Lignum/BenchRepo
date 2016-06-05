@@ -1,4 +1,6 @@
-function shorten(url)
+local module = {}
+
+function module.shorten(url)
     if not http then
         return error("HTTP is not enabled!")
     end
@@ -14,3 +16,5 @@ function shorten(url)
         return error("Could not reach http://tinyurl.com")
     end
 end
+
+return module
