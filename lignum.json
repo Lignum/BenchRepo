@@ -8,8 +8,10 @@
 			"version": 1.0,
 			"lib": "tinyurl.lua",
 			"download": {
-				"tinyurl.lua": "github://Lignumm/BenchRepo/src/tinyurl.lua"
-			}
+				"tinyurl.lua": "github://Lignumm/BenchRepo/src/tinyurl.lua",
+				"shortenurl.lua": "github://Lignumm/BenchRepo/src/shortenurl.lua"
+			},
+			"launch": "shortenurl.lua"
 		}
 	]
 }
