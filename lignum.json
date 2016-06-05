@@ -5,7 +5,7 @@
 		{
 			"name": "tinyurl",
 			"description": "An extremely primitive library for creating shortened URLs with tinyurl.",
-			"version": 1.0,
+			"version": 1.01,
 			"lib": "tinyurl.lua",
 			"download": {
 				"tinyurl.lua": "github://Lignumm/BenchRepo/src/tinyurl.lua"

@@ -5,7 +5,7 @@ function module.shorten(url)
         return error("HTTP is not enabled!")
     end
     
-    local encoded = textutils.urlEncode(url)
+    local encoded = textutils.urlEncode(expect(url, "string", 1))
     local resp = http.get("http://tinyurl.com/api-create.php?url=" .. encoded)
     
     if resp then
